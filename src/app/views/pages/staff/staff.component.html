@@ -1,1 +1,20 @@
-<p>staff works!</p>
+<h1>Listado de empleados</h1>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <employee-list
+      [employeeList]="employee"
+      (onDelete)="onDeletEmployee($event)"
+    >
+    </employee-list>
+  </div>
+</div>
+
+<!--
+  <employee-list
+      [employeeList]="employee"
+      (onDelete)="onDeletEmployee($event)"
+    >
+    </employee-list>
+-->

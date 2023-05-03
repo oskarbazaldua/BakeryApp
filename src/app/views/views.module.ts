@@ -8,16 +8,20 @@ import { HomeComponent } from './pages/home/home.component';
 import { StaffComponent } from './pages/staff/staff.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ViewsRoutingModule } from './views-routing.module';
+import { ListComponent } from './pages/staff/list/list.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     StaffComponent,
-    LoginComponent
+    LoginComponent,
+    ListComponent,
+  ],
+  exports: [
+    StaffComponent
   ],
   imports: [
-
     CommonModule,
     PrimeNgModule,
     ViewsRoutingModule,
